@@ -1,0 +1,103 @@
+/* src/App.css */
+
+/* General styling for the application */
+/* src/App.css */
+
+/* Ensure that the body is the flex container */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: 100%; /* Ensure the body takes up full width */
+}
+
+/* Specific container styling */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 1000px !important; /* Set the width to 80% */
+  max-width: 1200px; /* Cap the width at 1200px */
+  margin: 20px auto;
+}
+
+
+h1, h3 {
+  color: #343a40;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Additional styling for the buttons */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+/* Styling for the generated charts */
+img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure all forms and inputs are properly spaced */
+.form-control,
+.form-select {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+/* Ensure the app looks good on mobile */
+@media (max-width: 508px) {
+  .container {
+      padding: 10px !important;
+      width: 950px !important; /* Adjust the width on smaller screens */
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+}
